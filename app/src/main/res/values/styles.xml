@@ -2,11 +2,17 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/textColor</item>
+    </style>
+
+    <!-- Button style. -->
+    <style name="application_launch_button_style">
+        <item name="android:textColor">@color/buttonTextColor</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
     </style>
 
 </resources>

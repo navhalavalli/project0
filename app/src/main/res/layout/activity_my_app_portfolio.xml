@@ -8,28 +8,70 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        android:paddingTop="@dimen/application_list_layout_padding_top">
 
         <TextView
+            android:id="@+id/my_nanodegree_apps_title"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my_nanodegree_apps_title_bottom_margin"
+            android:gravity="center"
             android:text="@string/my_nanodegree_apps"
-            android:layout_weight="1"/>
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/my_nanodegree_apps_title_text_size" />
 
         <Button
+            android:id="@+id/project_p1"
+            style="@style/application_launch_button_style"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/popular_movies"
-            android:layout_weight="1"/>
+            android:onClick="launchApplication"
+            android:text="@string/popular_movies" />
+
         <Button
+            android:id="@+id/project_p2"
+            style="@style/application_launch_button_style"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/popular_movies"
-            android:layout_weight="1"/>
+            android:onClick="launchApplication"
+            android:text="@string/stock_hawk" />
+
+        <Button
+            android:id="@+id/project_p3"
+            style="@style/application_launch_button_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="launchApplication"
+            android:text="@string/build_it_bigger" />
+
+        <Button
+            android:id="@+id/project_p4"
+            style="@style/application_launch_button_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="launchApplication"
+            android:text="@string/make_your_app_material" />
+
+        <Button
+            android:id="@+id/project_p5"
+            style="@style/application_launch_button_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="launchApplication"
+            android:text="@string/go_ubiquitous" />
+
+        <Button
+            android:id="@+id/project_p6"
+            style="@style/application_launch_button_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="launchApplication"
+            android:text="@string/capstone" />
+
     </LinearLayout>
 </ScrollView>
